@@ -7,23 +7,18 @@
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+
   </head>
   <body>
-    <div class="card m-2" style="width: 18rem;">
-      <img class="card-img-top" src="images/bw.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+    <div include-html="card.html"></div>
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
-    <script type="text/javascript" src="vendor/angular/angular-route.min.js"></script>
+    <!-- index.js dynamically loads all the js files -->
     <script type="text/javascript" src="js/index.js"></script>
+    <!-- index.js dynamically loads all the js files -->
+    <script type="text/javascript" src="vendor/bootstrap/jquery.min.js"></script>
+    <!-- includeHTML will load html partials into the include-html divs -->
+    <script type="text/javascript" src="js/include_html.js"></script>
+    <script>includeHTML();</script>
   </body>
 </html>
